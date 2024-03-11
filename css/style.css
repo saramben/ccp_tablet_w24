@@ -1,0 +1,183 @@
+body{
+    background-color: #DFF3E3;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 10px;
+    padding: 0;
+}
+
+h1{
+    color: #004346;
+    font-size: 20pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+h2{
+    color: #D90166;
+    display: inline-block;
+    font-size: 20pt;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+img{
+    width: 70%;
+    height: auto;
+    border: #004346 6px solid;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #004346;
+}
+
+.navbar li{
+    display: inline;
+}
+
+.navbar li a{
+    display: inline-block;
+    color:#DFF3E3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a.active {
+    background-color: #BEE5BF;
+    color: #004346;
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar a:hover{
+    background-color: #BEE5BF;
+    color: #004346;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #DFF3E3;
+}
+
+ol{
+    margin-left: 20px;
+}
+
+ul{
+    margin-left: 20px;
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 14pt;
+    color: #D90166;
+}
+
+.foodpics {
+    display: grid;
+    grid-template-columns:1fr;
+    border: #D90166 3px dotted;
+    max-width: 100%;
+    grid-gap: 10px;
+    align-items: stretch;
+    justify-items: center;
+}
+
+
+.gallery1{
+    display: grid;
+    grid-template-columns: 1fr;
+    object-fit: cover;
+    border: #D90166 3px dotted;
+    max-width: 100%;
+    grid-gap: 30px;
+    align-items: stretch;
+    justify-items: center;
+  }
+
+.gallery{
+    display: grid;
+    grid-template-columns:1fr;
+    border: #D90166 3px dotted;
+    width: 100%;
+    grid-gap: 30px;
+    align-items: stretch;
+    justify-items: center;
+  }
+
+.top{
+    display: block;
+    width: 70%;
+    height: auto;
+
+}
+
+.sect{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #BEE5BF;
+}
+.instr{
+    background-color: #DFF3E3;
+    padding: 3px;
+    margin: 5px;
+}
+.flower{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 600px){
+    .foodpics{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }   
+    .gallery1{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        align-items: stretch;
+    }
+    
+}
